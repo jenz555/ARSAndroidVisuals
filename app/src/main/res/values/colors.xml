@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Theme related-->
+    <!--rgb 51 51 51-->
+    <color name="colorPrimary">#333333</color>
+    <!--rgb 0 0 0-->
+    <color name="colorPrimaryDark">#000000</color>
+    <!--rgb 21 163 202-->
+    <color name="colorAccent">#15A3CA</color>
+
+    <color name="textColorPrimary">#464646</color>
+    <!--rgb 21 163 202-->
+    <color name="colorAccentDark">#0e6b85</color>
+    <!--Theme related-->
+
+    <!--rgb 0 0 0-->
+    <color name="colorBlack">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--rgb 21 163 202-->
+    <color name="waterBlue">#15A3CA</color>
+    <!--rgb 255 132 0-->
+    <color name="pumpkinOrange">#FF8400</color>
+    <!--rgb 114 179 37-->
+    <color name="avocadoGreen">#72B325</color>
+    <!--rgb 152 152 152-->
+    <color name="warmGrey">#989898</color>
+    <!--rgb 108 108 108-->
+    <color name="brownishGrey">#6C6C6C</color>
+
+    <!--rgb 155 155 155-->
+    <color name="colorGray">#9B9B9B</color>
+    <!--rgb 68 68 68-->
+    <color name="colorGray1">#444444</color>
+    <!--rgb 151 151 151-->
+    <color name="colorGray2">#979797</color>
+    <!--rgb 70 70 70-->
+    <color name="colorGray3">#464646</color>
+    <!--rgb 102 102 102-->
+    <color name="colorGray4">#666666</color>
+    <color name="colorGrayLt">#CACACA</color>
+
+    <!--Yellow card footer-->
+    <color name="yellow">#fae17a</color>
+    <color name="ltYellow">#FDF5D1</color>
+
+    <!--rgb 207 16 45-->
+    <color name="colorRed">#D0021B</color>
+
+    <!--rgb 250 225 122-->
+    <color name="colorMessage">#fdf5d1</color>
+
+    <color name="color_navigation_list_background">#717073</color>
+
+
+    <color name="brand_alt_x2">#55c8e8</color>
+    <color name="brand_alt_x3">#0096d6</color>
+    <color name="brand_alt_x4">#004a88</color>
+
+
+
+
+</resources>

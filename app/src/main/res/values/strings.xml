@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Roadsmart</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="dialog_title">Are you Sure</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="not_assigned">NOT ASSIGNED</string>
+    <string name="pending">PENDING REVIEW</string>
+    <string name="assigned">ASSIGNED</string>
+    <string name="assignedLC">Assign</string>
+    <string name="call">Call</string>
+    <string name="on_duty">ON DUTY</string>
+    <string name="off_duty">OFF DUTY</string>
+    <string name="tow">Tow</string>
+    <string name="en_route">EN ROUTE</string>
+
+    <string name="reassigned">Reassign</string>
+
+    <string name="eta">ETA</string>
+    <string name="jump_start">JUMP START</string>
+
+    <string name="phone_number">456-789-1220</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="add_driver">Add Driver</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+    <string name="online">(online)</string>
+    <string name="offline">(offline)</string>
+
+
+    <string name="awaiting_reply">AWAITING REPLY</string>
+    <string name="call_requested">CALL REQUESTED</string>
+
+
+    <string name="year_color_make_model">2016 WHITE MAKE MODEL</string>
+
+    <string name="address_one">8473 West Main Street</string>
+    <string name="address_two">4567 South Main Street</string>
+    <string name="address_three">9875 North Main Street</string>
+    <string name="city_state_zip">Evanston, IL 60201</string>
+    <string name="arrival_time">35 Minutes</string>
+    <string name="current_time">12:03 AM</string>
+
+    <string name="all_jobs">All Jobs</string>
+    <string name="my_jobs">My Jobs</string>
+
+
+    <string name="first_name_label">First Name</string>
+    <string name="last_name_label">Last Name</string>
+    <string name="id_label">ID#</string>
+    <string name="phone_label">Phone Number</string>
+    <string name="email_label">Email</string>
+
+    <string name="first_name_field">Bradley</string>
+    <string name="last_name_field">Jones</string>
+    <string name="id_field">9714</string>
+    <string name="phone_field">223-445-6677</string>
+    <string name="email_field">Bradley.Jones@gmail.com</string>
+
+    <string name="dialog_message1">Do you need to assign another driver?</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Create</item>
+        <item>Read</item>
+        <item>Help</item>
+    </string-array>
+
+    <!--<string-array name="nav_drawer_items">-->
+    <!--<item>First</item>-->
+    <!--<item>Second</item>-->
+    <!--<item>Third</item>-->
+    <!--<item>Fourth</item>-->
+    <!--<item>Fifth</item>-->
+    <!--<item>Sixth</item>-->
+    <!--</string-array>-->
+    <!--<array name="nav_drawer_icons">-->
+    <!--<item>@drawable/ic_launcher</item>-->
+    <!--<item>@drawable/ic_launcher</item>-->
+    <!--<item>@drawable/ic_launcher</item>-->
+    <!--<item>@drawable/ic_launcher</item>-->
+    <!--<item>@drawable/ic_launcher</item>-->
+    <!--<item>@drawable/ic_launcher</item>-->
+    <!--</array>-->
+
+
+</resources>

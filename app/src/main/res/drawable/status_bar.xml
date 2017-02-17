@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/warmGrey"/>
+    <stroke android:width="0dp" />
+
+    <padding android:left="@dimen/activity_horizontal_margin"
+        android:top="11dp"
+        android:right="@dimen/activity_horizontal_margin"
+        android:bottom="11dp"/>
+
+
+    <corners android:bottomRightRadius="@dimen/card_radius"
+        android:bottomLeftRadius="@dimen/card_radius"
+        android:topLeftRadius="@dimen/card_radius"
+        android:topRightRadius="@dimen/card_radius"/>
+</shape>

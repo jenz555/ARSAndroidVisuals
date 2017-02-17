@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/>
+    <stroke android:width="0dp" />
+
+    <padding android:left="20dp"
+        android:top="17dp"
+        android:right="11dp"
+        android:bottom="19dp"/>
+
+
+    <corners android:bottomRightRadius="0dp"
+        android:bottomLeftRadius="0dp"
+        android:topLeftRadius="@dimen/card_radius"
+        android:topRightRadius="@dimen/card_radius"/>
+</shape>

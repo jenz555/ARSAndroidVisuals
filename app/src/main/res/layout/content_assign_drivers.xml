@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.myapplication.MainActivity">
+
+        <!--status bar-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/statusBarLayout1"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                style="@style/statusBar"
+                android:background="@drawable/status_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/on_duty"
+                android:id="@+id/textOnDuty" />
+        </LinearLayout>
+        <!--status bar-->
+
+
+        <RelativeLayout
+            style="@style/cardNormal"
+            android:background="@drawable/card_default"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardLayout01"
+            android:layout_below="@+id/statusBarLayout1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/container1"
+                android:padding="0dp"
+                android:weightSum="1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="bottom">
+
+
+
+                <TextView
+                style="@style/driverNameLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bradley Jones"
+                android:id="@+id/textView38"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="5dp" />
+
+                <TextView
+                style="@style/online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/online"
+                android:id="@+id/textView34"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView33"
+                android:layout_toEndOf="@+id/textView33" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right">
+
+                    <Button
+                        style="@style/rightArrowStyle"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@mipmap/ic_more"
+                        android:id="@+id/button2"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:id="@+id/container2"
+                android:layout_below="@+id/container1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/horzLine1"
+                    style="@style/horzLine"></LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/linearLayout"
+                    android:layout_below="@+id/horzLine1"
+                    android:padding="0dp"
+                    android:weightSum="1"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/textSubheadMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Currently On 1 Job"
+                        android:id="@+id/textView4"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/colorGray1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Miles from Disablement Location"
+                        android:id="@+id/textView37" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/horzLine"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/textView37"
+                    android:id="@+id/linearLayout12" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/container3"
+                    android:layout_gravity="top"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_eta_green"
+                        android:id="@+id/imageViewETABlue"
+                        style="@style/eta"
+                        android:contentDescription="eta" />
+
+                    <View
+                        style="@style/vertLine"
+                        android:layout_height="36dp"
+                        android:layout_alignParentTop="true"
+                        />
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:text="@string/arrival_time"
+                            android:id="@+id/textView8"
+                            style="@style/time"
+                            android:gravity="top"
+                            android:layout_gravity="top" />
+
+                        <TextView
+                            android:text="@string/current_time"
+                            android:id="@+id/textView9"
+                            android:layout_gravity="left|bottom"
+                            style="@style/time"
+                            android:gravity="top" />
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/cardNormal"
+            android:background="@drawable/card_default"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardLayout05"
+            android:layout_below="@+id/cardLayout01"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/linearLayout2"
+                android:padding="0dp"
+                android:weightSum="1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="bottom">
+
+                <TextView
+                    style="@style/driverNameLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bradley Jones"
+                    android:id="@+id/textView"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    style="@style/offline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offline"
+                    android:id="@+id/textView2"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView33"
+                    android:layout_toEndOf="@+id/textView33" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right" >
+
+                    <Button
+                        style="@style/rightArrowStyle"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@mipmap/ic_more"
+                        android:id="@+id/button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout9"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+                <LinearLayout
+                    style="@style/horzLine"
+                    android:orientation="vertical"
+                    android:id="@+id/horzLine5" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/linearLayout5"
+                    android:layout_below="@+id/linearLayout3"
+                    android:padding="0dp"
+                    android:weightSum="1"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/textSubheadMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Currently On 1 Job"
+                        android:id="@+id/textView7"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/colorGray1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Miles from Disablement Location"
+                        android:id="@+id/textView10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/horzLine"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/textView10"
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="fill_parent" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearLayout8"
+                    android:layout_gravity="top"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        style="@style/eta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_eta_black"
+                        android:id="@+id/imageView"
+                        android:contentDescription="eta" />
+
+                    <LinearLayout
+                        style="@style/vertLine"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/linearLayout2"
+                        android:id="@+id/vertLine2"
+                        android:layout_height="36dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            style="@style/time"
+                            android:text="@string/arrival_time"
+                            android:id="@+id/textView11"
+                            android:gravity="top"
+                            android:layout_gravity="top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            style="@style/time"
+                            android:text="@string/current_time"
+                            android:id="@+id/textView12"
+                            android:layout_gravity="left|bottom"
+                            android:gravity="top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--status bar-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cardLayout05"
+            android:layout_alignParentStart="true"
+            android:id="@+id/statusBarLayout2"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                style="@style/statusBar"
+                android:background="@drawable/status_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/off_duty"
+                android:id="@+id/textOnDuty" />
+        </LinearLayout>
+        <!--status bar-->
+
+        <RelativeLayout
+            style="@style/cardNormal"
+            android:background="@drawable/card_default"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:id="@+id/cardLayout06"
+            android:layout_below="@+id/statusBarLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:gravity="bottom">
+
+
+
+                    <TextView
+                        style="@style/driverNameLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bradley Jones"
+                        android:id="@+id/textView13"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginRight="5dp" />
+
+                    <TextView
+                        style="@style/offline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/offline"
+                        android:id="@+id/textView14"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView13"
+                        android:layout_toEndOf="@+id/textView13" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/textView14"
+                        android:layout_toEndOf="@+id/textView14" >
+
+                        <Button
+                            style="@style/rightArrowStyle"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:background="@mipmap/ic_more"
+                            android:id="@+id/button3"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

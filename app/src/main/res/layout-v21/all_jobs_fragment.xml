@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.myapplication.MainActivity">
+
+
+        <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+            <!--android:background="@color/colorAccent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentTop="true"-->
+        <!--android:id="@+id/linearLayout3"-->
+        <!--android:layout_marginBottom="@dimen/activity_vertical_margin">-->
+
+        <!--<Button-->
+        <!--android:id="@+id/btnAllJobs2"-->
+        <!--style="@style/btnPrimary"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="37dp"-->
+        <!--android:text="@string/all_jobs"-->
+        <!--android:textSize="@dimen/text_size_medium"-->
+        <!--android:textColor="@drawable/btn_primary_text"-->
+        <!--android:layout_weight="1"-->
+        <!--/>-->
+
+        <!--<Button-->
+        <!--android:id="@+id/btnMyJobs2"-->
+        <!--style="@style/btnPrimaryInactive"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="37dp"-->
+        <!--android:text="@string/my_jobs"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:layout_weight="1"-->
+
+        <!--/>-->
+<!--</LinearLayout>-->
+
+        <!--status bar-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/statusBarLayout1"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                style="@style/statusBar"
+                android:background="@drawable/status_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/not_assigned"
+                android:id="@+id/textNotAssigned1" />
+        </LinearLayout>
+        <!--status bar-->
+
+        <!--card01-->
+        <RelativeLayout
+            style="@style/cardNormal"
+            android:background="@drawable/card_default"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardLayout01"
+            android:layout_below="@+id/statusBarLayout1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+            <Button
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@mipmap/ic_more"
+                android:id="@+id/rightArrowBtn_1"
+                android:stateListAnimator="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout23">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tow"
+                style="@style/jobType"
+                android:textIsSelectable="false"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year_color_make_model"
+                style="@style/carMakeModelLarge"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address_one"
+                style="@style/textBody"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city_state_zip"
+                style="@style/textBody"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/horzLine1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout23"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <View
+                style="@style/horzLine"
+                android:layout_width="fill_parent"
+                android:layout_alignParentTop="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/horzLine1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout28"
+            android:gravity="center_vertical">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_eta_lt_blue"
+                    android:id="@+id/imageViewETABlue"></ImageView>
+
+                <View
+                    style="@style/vertLine"
+                    android:layout_height="36dp"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/arrival_time"
+                        android:id="@+id/textView8"
+                        style="@style/time"
+                        android:gravity="top"
+                        android:padding="0dp" />
+
+                    <TextView
+                        android:text="@string/current_time"
+                        android:id="@+id/textView9"
+                        style="@style/time"
+                        android:gravity="top"
+                        android:padding="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                    <Button
+                        android:text="@string/assignedLC"
+                        android:layout_height="35dp"
+                        style="@style/btnSecondary"
+                        android:background="@drawable/btn_secondary_states"
+                        android:id="@+id/assignBtn1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--card01-->
+
+        <!--status bar-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/statusBarLayout2"
+            android:layout_below="@id/cardLayout01"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                style="@style/statusBar"
+                android:background="@drawable/status_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pending"
+                android:id="@+id/textPending" />
+        </LinearLayout>
+        <!--status bar-->
+
+
+        <!--card02-->
+        <RelativeLayout
+            style="@style/cardNormal"
+            android:background="@drawable/card_default"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardLayout02"
+            android:layout_below="@+id/statusBarLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true">
+
+                <Button
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@mipmap/ic_more"
+                    android:text=""
+                    android:id="@+id/rightArrowBtn_2"
+                    android:stateListAnimator="@null"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout23">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tow"
+                    android:id="@+id/textTow2"
+                    style="@style/jobType"
+                    android:textIsSelectable="false"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/year_color_make_model"
+                    style="@style/carMakeModelLarge"
+                    android:id="@+id/custom_font"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_one"
+                    style="@style/textBody"
+                    android:id="@+id/textView5"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city_state_zip"
+                    style="@style/textBody"
+                    android:id="@+id/textView6"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/horzLine1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout23"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <View
+                    style="@style/horzLine"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentTop="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/horzLine1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout28"
+                android:gravity="center_vertical">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_eta_orange"
+                        android:id="@+id/imageViewETABlue"
+                        android:contentDescription="ETA"></ImageView>
+
+                    <View
+                        style="@style/vertLine"
+                        android:layout_height="36dp"
+                        android:layout_alignParentTop="true"
+                        />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/arrival_time"
+                            android:id="@+id/textView8"
+                            style="@style/time"
+                            android:gravity="top"
+                            android:padding="0dp" />
+
+                        <TextView
+                            android:text="@string/current_time"
+                            android:id="@+id/textView9"
+                            style="@style/time"
+                            android:gravity="top"
+                            android:padding="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/awaiting_reply"
+                        android:id="@+id/textView55"
+                        style="@style/etaAwaiting"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Mike Smith"
+                        style="@style/textBodySmall"
+                        android:id="@+id/textView56"
+                        android:layout_below="@+id/textView55"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <!--card02-->
+
+
+        <!--status bar-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/statusBarLayout3"
+            android:layout_below="@id/cardLayout02"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                style="@style/statusBar"
+                android:background="@drawable/status_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/assigned"
+                android:id="@+id/textAssigned" />
+        </LinearLayout>
+        <!--status bar-->
+
+
+        <!--card03-->
+        <RelativeLayout
+            style="@style/cardNormal"
+            android:background="@drawable/card_default"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardLayout03"
+            android:layout_below="@+id/statusBarLayout3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true">
+
+                <Button
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@mipmap/ic_more"
+                    android:text=""
+                    android:id="@+id/rightArrowBtn_2"
+                    android:stateListAnimator="@null"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout23">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tow"
+                    android:id="@+id/textTow2"
+                    style="@style/jobType"
+                    android:textIsSelectable="false"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/year_color_make_model"
+                    style="@style/carMakeModelLarge"
+                    android:id="@+id/custom_font"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_one"
+                    style="@style/textBody"
+                    android:id="@+id/textView5"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city_state_zip"
+                    style="@style/textBody"
+                    android:id="@+id/textView6"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/horzLine1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout23"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <View
+                    style="@style/horzLine"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentTop="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/horzLine1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout28"
+                android:gravity="center_vertical">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_eta_green"
+                        android:id="@+id/imageViewETABlue"
+                        android:contentDescription="ETA"></ImageView>
+
+                    <View
+                        style="@style/vertLine"
+                        android:layout_height="36dp"
+                        android:layout_alignParentTop="true"
+                        />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/arrival_time"
+                            android:id="@+id/textView8"
+                            style="@style/time"
+                            android:gravity="top"
+                            android:padding="0dp" />
+
+                        <TextView
+                            android:text="@string/current_time"
+                            android:id="@+id/textView9"
+                            style="@style/time"
+                            android:gravity="top"
+                            android:padding="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/awaiting_reply"
+                        android:id="@+id/textView55"
+                        style="@style/etaEnRoute"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Mike Smith"
+                        style="@style/textBodySmall"
+                        android:id="@+id/textView56"
+                        android:layout_below="@+id/textView55"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <!--card03-->
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.myapplication.MainActivity">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/statusBar"
+            android:background="@drawable/status_bar"
+            android:id="@+id/statusBarJobDetails"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:gravity="center_vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    style="@style/statusBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/not_assigned"
+                    android:id="@+id/textNotAssigned"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="EN ROUTE"
+                    android:id="@+id/textView18"
+                    android:layout_gravity="right"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/cardNormal"
+        android:background="@drawable/card_default"
+        android:id="@+id/cardLayout01"
+        android:layout_below="@+id/statusBarJobDetails"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:id="@+id/container11"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="0dp">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:id="@+id/linearLayout15"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/linearLayoutContainer2"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ETA"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    android:textIsSelectable="true"
+                    android:textStyle="bold"
+                    android:layout_marginRight="8dp" />
+
+                <LinearLayout
+                    style="@style/vertLine"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/linearLayout4"
+                    android:id="@+id/linearLayout41"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="8dp"/>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/time"
+                        android:text="@string/arrival_time"
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/time"
+                        android:text="@string/current_time"
+                        android:id="@+id/textView16"
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:background="@mipmap/ic_edit"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignRight="@+id/container11"-->
+                <!--android:layout_alignEnd="@+id/container11"-->
+                <!--android:gravity="center_vertical">-->
+
+                <!--<Button-->
+                    <!--style="@style/rightArrowStyle"-->
+                    <!--android:layout_width="35dp"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:background="@mipmap/ic_more"-->
+                    <!--android:id="@+id/button3"-->
+                    <!--android:layout_alignTop="@+id/button4"-->
+                    <!--android:layout_toLeftOf="@+id/button4"-->
+                    <!--android:layout_toStartOf="@+id/button4" />-->
+
+                <!--<Button-->
+                    <!--style="@style/rightArrowStyle"-->
+                    <!--android:layout_width="35dp"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:background="@mipmap/ic_more"-->
+                    <!--android:id="@+id/button4"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true" />-->
+            <!--</RelativeLayout>-->
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            style="@style/horzLineDetails"
+            android:id="@+id/horzLine1"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/container11"
+            ></LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayoutAssignDriver"
+            android:layout_below="@+id/horzLine1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver"
+                    android:textStyle="bold"
+                    android:id="@+id/textView24" />
+
+                <TextView
+                    style="@style/textBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unassigned"
+                    android:id="@+id/textView25" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="@string/reassigned"
+                    style="@style/btnSecondary"
+                    android:layout_weight="1"
+                    android:id="@+id/buttonReAssigned"
+                    android:layout_below="@+id/linearLayout6"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/horzLine2"
+            android:layout_below="@+id/linearLayoutAssignDriver"
+            style="@style/horzLineDetails"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/makeModel"
+            android:layout_below="@+id/horzLine2">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/carMakeModel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/year_color_make_model"
+                    android:id="@+id/textView11"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    style="@style/textBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelly Rogers"
+                    android:layout_marginBottom="2dp"
+                    android:id="@+id/textView12" />
+
+                <TextView
+                    style="@style/textBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_number"
+                    android:id="@+id/textView13"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/horzLine3"
+            android:layout_below="@+id/makeModel"
+            style="@style/horzLineDetails"></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout20"
+            android:orientation="horizontal"
+            android:layout_below="@+id/horzLine3">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disablement Location"
+                        android:textStyle="bold"
+                        android:id="@+id/textView11"
+                        android:layout_marginBottom="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        style="@style/textBody"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address_one"
+                        android:id="@+id/textView12"
+                        android:layout_marginBottom="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        style="@style/textBody"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city_state_zip"
+                        android:id="@+id/textView13"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentStart="false">
+
+                    <Button
+                        style="@style/rightArrowStyle"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/ic_directions"
+                        android:id="@+id/button3"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="center_vertical" />
+
+                    <Button
+                        style="@style/rightArrowStyle"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/ic_map"
+                        android:id="@+id/button4"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/horzLine5"
+            android:layout_below="@+id/linearLayout20"
+            style="@style/horzLineDetails"></LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout24"
+            android:orientation="horizontal"
+            android:layout_below="@+id/horzLine5">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comments"
+                        android:layout_marginBottom="2dp"
+                        android:textStyle="bold"
+                        android:id="@+id/textView71"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        style="@style/textBody"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My car is stuck in a ditch on the east side of the street just past the intersection with the Starbucks and Hobby Lobby.  I have two other people with me and need a ride to my house."
+                        android:id="@+id/text70"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/horzLine6"
+            android:layout_below="@+id/linearLayout24"
+            style="@style/horzLineDetails"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout26"
+            android:orientation="horizontal"
+            android:layout_below="@+id/horzLine6">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Customer Information"
+                        android:textStyle="bold"
+                        android:id="@+id/textView11"
+                        android:layout_marginBottom="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Caller Name:  "
+                            android:id="@+id/textView17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="SARAH"
+                            android:id="@+id/textView23" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Caller Phone Number:  "
+                            android:id="@+id/textView17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="847-555-3214"
+                            android:id="@+id/textView23" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Member Name:  "
+                            android:id="@+id/textView17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="SARAH TEST"
+                            android:id="@+id/textView23" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Membership: "
+                            android:id="@+id/textView17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Mercedes Benz"
+                            android:id="@+id/textView23" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Membership ID:"
+                            android:id="@+id/textView17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="#"
+                            android:id="@+id/textView23" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Benefit Mileage Limit:  "
+                            android:id="@+id/textView17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="0"
+                            android:id="@+id/textView23" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Benefit Dollar Limit:  "
+                            android:id="@+id/textView17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="0.0"
+                            android:id="@+id/textView23" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Additional Approved Amount:  "
+                            android:id="@+id/textView17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="$0.00"
+                            android:id="@+id/textView23" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <Button
+            style="@style/btnPrimary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="I'M EN ROUTE"
+            android:id="@+id/button7"
+            android:layout_below="@+id/cardLayout01"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_secondary_states"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
